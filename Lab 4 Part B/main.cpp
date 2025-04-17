@@ -49,7 +49,7 @@ void setup() {
   Serial.begin(9600);
   delay(500);
 
-  Wire.begin(21, 22);  // TTGO pinout
+  Wire.begin(21, 22);
 
   if (!myIMU.begin()) {
     Serial.println("Could not connect to IMU.");
@@ -84,5 +84,5 @@ void loop() {
     stepDetected = false;
   }
 
-  delay(20);  // ~50Hz
+  delay(20);
 }
